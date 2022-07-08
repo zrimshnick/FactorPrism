@@ -1,3 +1,67 @@
 @import "_variables";
 @import "_mixins";
 
+.testing {
+  padding-top: 300rem;
+  padding-bottom: 150rem;
+  font-size: 25rem;
+}
+
+.intro {
+  @include flex-col-center;
+  font: $fontv2;
+}
+
+.about,
+.about2,
+.download,
+.download-button {
+  font: fontv2;
+  font-size: 10rem;
+  //font-weight: bold;
+  margin-top: 9rem;
+  padding-top: 8rem;
+  text-align: center;
+}
+.about2 {
+  padding-top: 0rem;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  line-height: 4.5rem;
+}
+.download {
+  padding-top: 0rem;
+  font-size: 5rem;
+  margin-top: 6rem;
+}
+.download-button {
+  background-color: $mainblue;
+  //color: white;
+  color: white;
+  padding: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  border: $mainblue 0.2rem solid;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+}
+.download-button:hover {
+  //transform: scale(1.025);
+  //transform: translateY(-0.25rem);
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  color: $mainblue;
+}
+.download-button:active {
+  transition: all 0.2s ease;
+  //transform: scale(0.8);
+  transform: translateY(1rem);
+}
+.download-button:focus {
+  color: white;
+}

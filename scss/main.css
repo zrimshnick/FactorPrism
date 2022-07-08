@@ -13,11 +13,9 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: auto;
-  border-bottom: #ec1e24 0.1rem solid;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
   z-index: 1;
 }
 
@@ -36,8 +34,8 @@ header {
 }
 
 .logo img {
-  width: 21rem;
-  height: 7rem;
+  width: 24rem;
+  height: 8rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -59,19 +57,18 @@ header {
 }
 
 .navbar a {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin-left: 0rem;
   margin-right: 0rem;
 }
 
 a {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Questrial", sans-serif;
+  font-size: 2rem;
   font-weight: bold;
   padding: 0.5rem;
   text-decoration: none;
-  background: white;
   display: inline-block;
   color: black;
   -webkit-transition: all 1s ease;
@@ -101,6 +98,85 @@ a:active {
           transform: translateY(0.7rem);
 }
 
+.testing {
+  padding-top: 300rem;
+  padding-bottom: 150rem;
+  font-size: 25rem;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: "Questrial", sans-serif;
+}
+
+.about,
+.about2,
+.download,
+.download-button {
+  font: fontv2;
+  font-size: 10rem;
+  margin-top: 9rem;
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.about2 {
+  padding-top: 0rem;
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  line-height: 4.5rem;
+}
+
+.download {
+  padding-top: 0rem;
+  font-size: 5rem;
+  margin-top: 6rem;
+}
+
+.download-button {
+  background-color: #3366ff;
+  color: white;
+  padding: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  border: #3366ff 0.2rem solid;
+  border-radius: 2rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.download-button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  color: #3366ff;
+}
+
+.download-button:active {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+}
+
+.download-button:focus {
+  color: white;
+}
+
 html,
 body,
 * {
@@ -112,12 +188,13 @@ body,
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Questrial", sans-serif;
   min-height: 100%;
 }
 
 body {
   background-repeat: repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 /*# sourceMappingURL=main.css.map */

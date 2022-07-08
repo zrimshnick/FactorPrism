@@ -5,11 +5,11 @@ header {
   @include flex-row-center;
   justify-content: space-between;
   height: auto;
-  border-bottom: $red 0.1rem solid;
+  //border-bottom: $red 0.1rem solid;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  //background-color: #fff;
   z-index: 1;
 }
 
@@ -24,8 +24,8 @@ header {
 }
 
 .logo img {
-  width: 21rem;
-  height: 7rem;
+  width: 24rem;
+  height: 8rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -37,22 +37,21 @@ header {
 }
 
 .navbar a {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   margin-left: 0rem;
   margin-right: 0rem;
 }
 
 a {
-  font-family: $font;
-  font-size: 1.5rem;
+  font-family: $fontv2;
+  font-size: 2rem;
   font-weight: bold;
   padding: 0.5rem;
   text-decoration: none;
-  background: white;
+  //background: white;
   display: inline-block;
   color: black;
-  //border: 1rem white solid;
   transition: all 1s ease;
 }
 
