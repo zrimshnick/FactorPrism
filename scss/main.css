@@ -1,3 +1,106 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  border-bottom: #ec1e24 0.1rem solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.logo img {
+  width: 21rem;
+  height: 7rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0rem;
+  padding-right: 3rem;
+  list-style-type: none;
+}
+
+.navbar a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+  background: white;
+  display: inline-block;
+  color: black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.navbar a::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #3366ff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:focus {
+  color: #ec1e24;
+}
+
+a:active {
+  -webkit-transform: translateY(0.7rem);
+          transform: translateY(0.7rem);
+}
+
 html,
 body,
 * {
@@ -11,5 +114,10 @@ body,
 html {
   font-family: "Quicksand", sans-serif;
   min-height: 100%;
+}
+
+body {
+  background-repeat: repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

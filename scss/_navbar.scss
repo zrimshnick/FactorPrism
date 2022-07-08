@@ -2,17 +2,83 @@
 @import "_mixins";
 
 header {
-    @include flex-row-center;
-    justify-content: space-between;
-    height: auto;
-    border-bottom: red 0.1rem solid;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 1;
+  @include flex-row-center;
+  justify-content: space-between;
+  height: auto;
+  border-bottom: $red 0.1rem solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  //width: 20rem;
+  //height: 4rem;
+}
 
+.logo img {
+  width: 21rem;
+  height: 7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  @include flex-row-center;
+  padding-left: 0rem;
+  padding-right: 3rem;
+  list-style-type: none;
+}
+
+.navbar a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+a {
+  font-family: $font;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+  background: white;
+  display: inline-block;
+  color: black;
+  //border: 1rem white solid;
+  transition: all 1s ease;
+}
+
+// HOVER AFFECTS
+.navbar a::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  // on hover, bottom becomes this
+  background: $mainblue;
+  transition: width 0.3s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  //transform: scale(1.075);
+}
+
+a:focus {
+  //on click, becomes this color
+  color: $red;
+}
+a:active {
+  transform: translateY(0.7rem);
 }

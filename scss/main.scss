@@ -1,5 +1,7 @@
 @import "_variables";
 @import "_navbar";
+@import "_mixins";
+@import "_intro";
 
 html,
 body,
@@ -12,4 +14,9 @@ body,
 html {
   font-family: $font;
   min-height: 100%;
+}
+
+body {
+  background-repeat: repeat;
+  background-size: cover;
 }
