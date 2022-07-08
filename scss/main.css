@@ -173,10 +173,6 @@ a:active {
           transform: translateY(1rem);
 }
 
-.download-button:focus {
-  color: white;
-}
-
 html,
 body,
 * {
