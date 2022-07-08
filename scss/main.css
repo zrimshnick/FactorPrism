@@ -1,0 +1,15 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  min-height: 100%;
+}
+/*# sourceMappingURL=main.css.map */
