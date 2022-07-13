@@ -182,36 +182,38 @@
 }
 .video-button {
   font-size: 3.5rem;
-  padding: 0.8rem;
-  border: 0.25rem white solid;
-  border-radius: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  //border: 0.25rem white solid;
+  //border-radius: 1rem;
   transition: all 0.2s;
 }
 
 a {
-  padding: 0.5rem;
-  text-decoration: none;
-  //background: white;
-  display: inline-block;
-  color: black;
   transition: all 1s ease;
+  position: relative;
+}
+.video-button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  //background-color: $red;
+  background-color: $mainblue;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
 }
 
-// HOVER AFFECTS
-.video-section a::after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 2px;
-  // on hover, bottom becomes this
-  background: $mainblue;
-  transition: width 0.3s;
+.video-button:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
 }
-a:hover::after {
-  width: 100%;
+
+.video-button:hover {
+  //color: $mainblue;
 }
-/*.video-button:hover {
-  //border: 0.25rem $mainblue solid;
-  //border-radius: 1rem;
-  color: $mainblue;
-}*/

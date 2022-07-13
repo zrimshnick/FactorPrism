@@ -312,41 +312,45 @@ a:active {
 
 .video-button {
   font-size: 3.5rem;
-  padding: 0.8rem;
-  border: 0.25rem white solid;
-  border-radius: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a {
-  padding: 0.5rem;
-  text-decoration: none;
-  display: inline-block;
-  color: black;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  position: relative;
 }
 
-.video-section a::after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #3366ff;
-  -webkit-transition: width 0.3s;
-  transition: width 0.3s;
-}
-
-a:hover::after {
+.video-button:after {
+  content: "";
+  position: absolute;
   width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3366ff;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 }
 
-/*.video-button:hover {
-  //border: 0.25rem $mainblue solid;
-  //border-radius: 1rem;
-  color: $mainblue;
-}*/
+.video-button:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
 html,
 body,
 * {
