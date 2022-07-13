@@ -27,6 +27,7 @@
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  padding-bottom: 10rem;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -45,7 +46,7 @@
   font-size: 10rem;
   //font-weight: bold;
   margin-top: 9rem;
-  padding-top: 15rem;
+  padding-top: 12.5rem;
   text-align: center;
 }
 
@@ -75,7 +76,6 @@
     background-position: 200% center;
   }
 }
-
 .about2 {
   padding-top: 3rem;
   font-size: 3.5rem;
@@ -85,6 +85,17 @@
   width: 75%;
   line-height: 4.5rem;
 }
+
+@media screen and (max-width: $monitor-min) {
+  .about {
+    font-size: 8rem;
+  }
+  .about2 {
+    font-size: 3rem;
+    //line-height: 3.5rem;
+  }
+}
+
 .download {
   padding-top: 3rem;
   font-size: 5rem;
@@ -121,17 +132,17 @@
 }
 
 .illustrated {
-  padding-top: 12rem;
+  padding-top: 10rem;
   @include flex-col-center;
   font-size: 10rem;
   //////////
   opacity: 0;
-  transform: translate(0, 0rem);
-  transition: all 4s;
+  transform: translate(0, 0);
+  transition: all 2s;
 }
 .illustrated.visible {
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translate(0, -10rem);
 }
 
 .illustrated-title {
@@ -140,6 +151,67 @@
 .illustrated-info {
   text-align: center;
   line-height: 4.5rem;
-  padding: 3rem 25rem 3rem 25rem;
-  font-size: 3rem;
+  //padding: 3rem 25rem 3rem 25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 2.5rem;
+  width: 75%;
 }
+.illustrated-img {
+  //border: 1rem black solid;
+}
+
+@media screen and (max-width: $monitor-min) {
+  .illustrated-info {
+    //font-size: 2rem;
+    //line-height: 3.5rem;
+    width: 85%;
+  }
+}
+
+.video-section {
+  padding-top: 4rem;
+  text-align: center;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 2s;
+}
+.video-section.visible {
+  opacity: 1;
+  transform: translate(0, -10rem);
+}
+.video-button {
+  font-size: 3.5rem;
+  padding: 0.8rem;
+  border: 0.25rem white solid;
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+
+a {
+  padding: 0.5rem;
+  text-decoration: none;
+  //background: white;
+  display: inline-block;
+  color: black;
+  transition: all 1s ease;
+}
+
+// HOVER AFFECTS
+.video-section a::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  // on hover, bottom becomes this
+  background: $mainblue;
+  transition: width 0.3s;
+}
+a:hover::after {
+  width: 100%;
+}
+/*.video-button:hover {
+  //border: 0.25rem $mainblue solid;
+  //border-radius: 1rem;
+  color: $mainblue;
+}*/
