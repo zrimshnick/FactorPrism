@@ -2,26 +2,37 @@
 @import "_mixins";
 
 .tag {
-  padding-top: 100rem;
+  padding-top: 1rem;
   padding-bottom: 25rem;
   font-size: 25rem;
   text-align: center;
   /////////////////ANIMATION
   opacity: 0;
   transform: translate(0, 5rem);
-  transition: all 1s;
+  transition: all 4s;
 }
 .tag.visible {
   opacity: 1;
   transform: translate(0, 0);
 }
 .one {
-  background-color: yellow;
+  //background-color: yellow;
 }
 
 .intro {
   @include flex-col-center;
   font: $fontv2;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .about,
@@ -44,7 +55,7 @@
   line-height: 4.5rem;
 }
 .download {
-  padding-top: 5rem;
+  padding-top: 3rem;
   font-size: 5rem;
   margin-top: 6rem;
 }
@@ -82,7 +93,16 @@
   padding-top: 12rem;
   @include flex-col-center;
   font-size: 10rem;
+  //////////
+  opacity: 0;
+  transform: translate(0, 0rem);
+  transition: all 4s;
 }
+.illustrated.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 .illustrated-title {
   padding-bottom: 2rem;
 }

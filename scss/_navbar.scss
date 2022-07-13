@@ -9,8 +9,16 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  //background-color: #fff;
+  //background-color: white;
+  //background-image: linear-gradient(white, transparent);
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.24),
+    rgba(255, 255, 255, 0.705),
+    white
+  );
   z-index: 1;
+  padding-bottom: 10rem;
 }
 
 .logo {

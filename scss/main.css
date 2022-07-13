@@ -16,7 +16,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.24)), color-stop(rgba(255, 255, 255, 0.705)), to(white));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.705), white);
   z-index: 1;
+  padding-bottom: 10rem;
 }
 
 .logo {
@@ -99,25 +102,21 @@ a:active {
 }
 
 .tag {
-  padding-top: 100rem;
+  padding-top: 1rem;
   padding-bottom: 25rem;
   font-size: 25rem;
   text-align: center;
   opacity: 0;
   -webkit-transform: translate(0, 5rem);
           transform: translate(0, 5rem);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 4s;
+  transition: all 4s;
 }
 
 .tag.visible {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-}
-
-.one {
-  background-color: yellow;
 }
 
 .intro {
@@ -132,6 +131,30 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   font: "Questrial", sans-serif;
+  -webkit-animation: fadeInAnimation ease 3s;
+          animation: fadeInAnimation ease 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .about,
@@ -155,7 +178,7 @@ a:active {
 }
 
 .download {
-  padding-top: 5rem;
+  padding-top: 3rem;
   font-size: 5rem;
   margin-top: 6rem;
 }
@@ -202,6 +225,17 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   font-size: 10rem;
+  opacity: 0;
+  -webkit-transform: translate(0, 0rem);
+          transform: translate(0, 0rem);
+  -webkit-transition: all 4s;
+  transition: all 4s;
+}
+
+.illustrated.visible {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .illustrated-title {
