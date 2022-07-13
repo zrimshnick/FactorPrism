@@ -98,10 +98,26 @@ a:active {
           transform: translateY(0.7rem);
 }
 
-.testing {
-  padding-top: 300rem;
-  padding-bottom: 150rem;
+.tag {
+  padding-top: 100rem;
+  padding-bottom: 25rem;
   font-size: 25rem;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translate(0, 5rem);
+          transform: translate(0, 5rem);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.tag.visible {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.one {
+  background-color: yellow;
 }
 
 .intro {
@@ -125,12 +141,12 @@ a:active {
   font: fontv2;
   font-size: 10rem;
   margin-top: 9rem;
-  padding-top: 8rem;
+  padding-top: 15rem;
   text-align: center;
 }
 
 .about2 {
-  padding-top: 0rem;
+  padding-top: 3rem;
   font-size: 3.5rem;
   margin-top: 2rem;
   padding-left: 15rem;
@@ -139,7 +155,7 @@ a:active {
 }
 
 .download {
-  padding-top: 0rem;
+  padding-top: 5rem;
   font-size: 5rem;
   margin-top: 6rem;
 }
@@ -171,6 +187,32 @@ a:active {
   transition: all 0.2s ease;
   -webkit-transform: translateY(1rem);
           transform: translateY(1rem);
+}
+
+.illustrated {
+  padding-top: 12rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10rem;
+}
+
+.illustrated-title {
+  padding-bottom: 2rem;
+}
+
+.illustrated-info {
+  text-align: center;
+  line-height: 4.5rem;
+  padding: 3rem 25rem 3rem 25rem;
+  font-size: 3rem;
 }
 
 html,
