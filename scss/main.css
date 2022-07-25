@@ -600,7 +600,7 @@ a {
   content: " ";
   display: block;
   width: 0;
-  height: 2px;
+  height: 1px;
   background: #3366ff;
   -webkit-transition: width 0.3s;
   transition: width 0.3s;
