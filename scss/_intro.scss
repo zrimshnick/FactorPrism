@@ -220,7 +220,7 @@ a {
 
 .case-study {
   @include flex-col-center;
-  padding-top: 1rem;
+  padding-top: 8rem;
   opacity: 0;
   transform: translate(0, 0);
   transition: all 2s;
@@ -248,27 +248,36 @@ a {
 .case-study-info-image {
   padding-left: 5rem;
   padding-right: 2rem;
-  size: 75%;
+  height: 45rem;
 }
 .case-study-paragraphs {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 3rem;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
 }
 .case-study-paragraphs p {
-  line-height: 3rem;
+  line-height: 3.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
 
 .case-study-button {
+  margin-top: 2rem;
   font-size: 3rem;
   padding-top: 0.8rem;
   padding-bottom: 0.5rem;
   padding-left: 0rem;
   padding-right: 0rem;
-  //border: 0.25rem white solid;
-  //border-radius: 1rem;
   transition: all 0.2s;
+}
+@media screen and (max-width: $monitor-min) {
+  .case-study-info-image {
+    height: 32rem;
+  }
+  .case-study-button {
+    margin-top: 0rem;
+  }
 }
 .case-study-button:after {
   content: "";
@@ -282,8 +291,97 @@ a {
   transform-origin: center;
   transition: transform 0.3s ease-out;
 }
-
 .case-study-button:hover:after {
   transform: scaleX(1);
   transform-origin: center;
+}
+
+.facts-section {
+  @include flex-col-center;
+  text-align: center;
+  height: 24rem;
+}
+.facts-header {
+  font-size: 7rem;
+  padding: 0rem 8rem 4rem 8rem;
+}
+.facts-js {
+  margin: auto;
+  color: $mainblue;
+  font-size: 8rem;
+  font-weight: lighter;
+}
+
+//////////////FOOTER
+.footer-section {
+  @include flex-col-center;
+  padding-top: 10rem;
+  text-align: center;
+  position: absolute;
+}
+.thankyou {
+  font-size: 3rem;
+  padding: 3rem 10rem 3rem 10rem;
+  line-height: 4rem;
+}
+.contact-icon {
+  margin-right: 1.25rem;
+  height: 3rem;
+}
+.contact-button {
+  @include flex-row-center;
+  background-color: $mainblue;
+  color: white;
+  padding: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: lighter;
+  border: $mainblue 0.2rem solid;
+  border-radius: 2rem;
+  transition: all 0.2s ease;
+}
+.contact-button img {
+  border: $mainblue 2px solid;
+  transition: all 0s ease-in-out;
+}
+.contact-button:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  color: $mainblue;
+  img {
+    background-color: $mainblue;
+    border-radius: 0.5rem;
+  }
+}
+.contact-button:active {
+  transition: all 0.2s ease;
+  transform: translateY(1rem);
+}
+.contact-button:focus {
+  color: white;
+}
+
+.footer-navbar-section {
+  @include flex-row-center;
+  //padding: 2rem 4rem 3rem 4rem;
+  padding: 3rem;
+  list-style: none;
+}
+.footer-navbar-section a {
+  font-size: 1.85rem;
+  font-weight: lighter;
+  padding: 2rem 2rem 0rem 2rem;
+  color: black;
+}
+.footer-navbar-section .homestyle {
+  color: $red;
+}
+.copyright {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(156, 155, 155);
+  padding-bottom: 3rem;
 }

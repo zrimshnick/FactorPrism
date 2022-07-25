@@ -64,3 +64,70 @@ $(document).on("scroll", function () {
     }
   }
 });
+/////// FACTS
+$(document).on("scroll", function () {
+  var pageTop4 = $(document).scrollTop();
+  var pageBottom4 = pageTop4 + $(window).height();
+  var tags4 = $(".facts-section");
+
+  for (var i = 0; i < tags4.length; i++) {
+    var tag4 = tags4[i];
+
+    if ($(tag4).position().top < pageBottom4) {
+      $(tag4).addClass("visible");
+    } else {
+      $(tag4).removeClass("visible");
+    }
+  }
+});
+///////////////// FACTS - WORDS TYPING
+var words = [
+    "Completely Automatic",
+    "Limitlessly Scalable",
+    "Generalizable",
+    "Comprehensive",
+    "Easy to Use",
+  ],
+  part,
+  i = 0,
+  offset = 0,
+  len = words.length,
+  forwards = true,
+  skip_count = 0,
+  skip_delay = 40,
+  speed = 70;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    } else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substring(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      } else {
+        offset--;
+      }
+    }
+    $(".facts-js").text(part);
+  }, speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});
