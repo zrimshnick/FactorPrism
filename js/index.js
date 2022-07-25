@@ -15,6 +15,7 @@ console.log("Connected");
     }
   }
 }); */
+
 /////////ILLUSTRATED
 $(document).on("scroll", function () {
   var pageTop = $(document).scrollTop();
@@ -44,6 +45,22 @@ $(document).on("scroll", function () {
       $(tag2).addClass("visible");
     } else {
       $(tag2).removeClass("visible");
+    }
+  }
+});
+////// CASE STUDY
+$(document).on("scroll", function () {
+  var pageTop3 = $(document).scrollTop();
+  var pageBottom3 = pageTop3 + $(window).height();
+  var tags3 = $(".case-study");
+
+  for (var i = 0; i < tags3.length; i++) {
+    var tag3 = tags3[i];
+
+    if ($(tag3).position().top < pageBottom3) {
+      $(tag3).addClass("visible");
+    } else {
+      $(tag3).removeClass("visible");
     }
   }
 });

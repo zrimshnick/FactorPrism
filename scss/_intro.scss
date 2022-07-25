@@ -217,3 +217,73 @@ a {
 .video-button:hover {
   //color: $mainblue;
 }
+
+.case-study {
+  @include flex-col-center;
+  padding-top: 1rem;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 2s;
+}
+.case-study.visible {
+  opacity: 1;
+  transform: translate(0, -10rem);
+}
+
+.case-study-title {
+  font-size: 8.5rem;
+}
+.case-study-description {
+  font-size: 3.5rem;
+  color: gray;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.case-study-info {
+  @include flex-row-center;
+  padding-bottom: 1rem;
+}
+
+.case-study-info-image {
+  padding-left: 5rem;
+  padding-right: 2rem;
+  size: 75%;
+}
+.case-study-paragraphs {
+  font-size: 3rem;
+  padding: 3rem;
+}
+.case-study-paragraphs p {
+  line-height: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.case-study-button {
+  font-size: 3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  //border: 0.25rem white solid;
+  //border-radius: 1rem;
+  transition: all 0.2s;
+}
+.case-study-button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $mainblue;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.case-study-button:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}

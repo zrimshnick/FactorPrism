@@ -249,6 +249,20 @@ a:active {
           transform: translateY(1rem);
 }
 
+.on-scroll {
+  opacity: 0;
+  -webkit-transform: translate(0, 10rem);
+          transform: translate(0, 10rem);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.on-scroll.visible {
+  opacity: 1;
+  -webkit-transform: translate(0, 0rem);
+          transform: translate(0, 0rem);
+}
+
 .illustrated {
   padding-top: 10rem;
   display: -webkit-box;
@@ -262,19 +276,16 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   font-size: 10rem;
-  opacity: 0;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  /*opacity: 0;
+  transform: translate(0, 0);
+  transition: all 2s;*/
 }
 
+/*
 .illustrated.visible {
   opacity: 1;
-  -webkit-transform: translate(0, -10rem);
-          transform: translate(0, -10rem);
-}
-
+  transform: translate(0, -10rem);
+}*/
 .illustrated-title {
   padding-bottom: 2rem;
 }
@@ -297,19 +308,15 @@ a:active {
 .video-section {
   padding-top: 4rem;
   text-align: center;
-  opacity: 0;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  /*opacity: 0;
+  transform: translate(0, 0);
+  transition: all 2s;*/
 }
 
-.video-section.visible {
+/*.video-section.visible {
   opacity: 1;
-  -webkit-transform: translate(0, -10rem);
-          transform: translate(0, -10rem);
-}
-
+  transform: translate(0, -10rem);
+}*/
 .video-button {
   font-size: 3.5rem;
   padding-top: 0.8rem;
@@ -345,6 +352,104 @@ a {
 }
 
 .video-button:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.case-study {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10rem;
+  /*opacity: 0;
+  transform: translate(0, 0);
+  transition: all 2s;*/
+}
+
+/*.case-study.visible {
+  opacity: 1;
+  transform: translate(0, -10rem);
+}*/
+.case-study-title {
+  font-size: 8.5rem;
+}
+
+.case-study-description {
+  font-size: 3.5rem;
+  color: gray;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.case-study-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+.case-study-info-image {
+  padding-left: 5rem;
+  padding-right: 2rem;
+  size: 75%;
+}
+
+.case-study-paragraphs {
+  font-size: 3rem;
+  padding: 3rem;
+}
+
+.case-study-paragraphs p {
+  line-height: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.case-study-button {
+  font-size: 3rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.case-study-button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3366ff;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.case-study-button:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: center;
