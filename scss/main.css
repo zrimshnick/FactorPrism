@@ -596,8 +596,26 @@ a {
   color: black;
 }
 
+.footer-navbar-section a::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #3366ff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
 .footer-navbar-section .homestyle {
   color: #ec1e24;
+}
+
+.footer-navbar-section .homestyle::after {
+  background: #ec1e24;
+}
+
+.footer-navbar-section a:hover::after {
+  width: 100%;
 }
 
 .copyright {

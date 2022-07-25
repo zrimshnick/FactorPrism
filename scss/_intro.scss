@@ -376,9 +376,26 @@ a {
   padding: 2rem 2rem 0rem 2rem;
   color: black;
 }
+
+.footer-navbar-section a::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 2px;
+  // on hover, bottom becomes this
+  background: $mainblue;
+  transition: width 0.3s;
+}
 .footer-navbar-section .homestyle {
   color: $red;
 }
+.footer-navbar-section .homestyle::after {
+  background: $red;
+}
+.footer-navbar-section a:hover::after {
+  width: 100%;
+}
+
 .copyright {
   font-size: 2rem;
   font-weight: bold;
