@@ -1,0 +1,58 @@
+@import "_variables";
+@import "_mixins";
+
+.dwnld-downloadsection {
+  @include flex-col-center;
+  padding-top: 20rem;
+}
+.dwnld-downloadsection h1 {
+  font-size: 8rem;
+  font-weight: lighter;
+}
+
+.dwnld-downloadoptions {
+  @include flex-row-center;
+  justify-content: space-evenly;
+}
+.dwnld-downloadoptions a {
+  font-size: 3.5rem;
+  width: 45rem;
+  height: 25rem;
+  //min-height: 20rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 5rem;
+  text-align: center;
+}
+.dwnld-optionboxes {
+  @include flex-col-center;
+  border: 0.2rem white solid;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in;
+  div {
+    color: rgb(75, 75, 75);
+
+    font-size: 4rem;
+    font-weight: lighter;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+  }
+  img {
+    height: 6rem;
+  }
+}
+.dwnld-optionboxes:hover {
+  border-radius: 1.5rem;
+  transform: translateY(-0.2rem);
+}
+.dwnld-microsoft:hover {
+  border-color: rgba(0, 166, 239, 255);
+}
+.dwnld-ppt:hover {
+  border-color: rgba(209, 68, 36, 255);
+}
+.dwnld-optionboxes::after {
+  transform: translateY(0.5rem);
+}

@@ -505,7 +505,6 @@ a {
           align-items: center;
   padding-top: 10rem;
   text-align: center;
-  position: absolute;
 }
 
 .thankyou {
@@ -623,6 +622,101 @@ a {
   font-weight: bold;
   color: #9c9b9b;
   padding-bottom: 3rem;
+}
+
+.dwnld-downloadsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20rem;
+}
+
+.dwnld-downloadsection h1 {
+  font-size: 8rem;
+  font-weight: lighter;
+}
+
+.dwnld-downloadoptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.dwnld-downloadoptions a {
+  font-size: 3.5rem;
+  width: 45rem;
+  height: 25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 5rem;
+  text-align: center;
+}
+
+.dwnld-optionboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.2rem white solid;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.dwnld-optionboxes div {
+  color: #4b4b4b;
+  font-size: 4rem;
+  font-weight: lighter;
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.dwnld-optionboxes img {
+  height: 6rem;
+}
+
+.dwnld-optionboxes:hover {
+  border-radius: 1.5rem;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+}
+
+.dwnld-microsoft:hover {
+  border-color: #00a6ef;
+}
+
+.dwnld-ppt:hover {
+  border-color: #d14424;
+}
+
+.dwnld-optionboxes::after {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
 }
 
 html,
