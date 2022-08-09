@@ -1,0 +1,22 @@
+@import "_variables";
+@import "_mixins";
+
+.vid-videosection {
+  @include flex-col-center;
+  padding-top: 15rem;
+}
+.vid-videosection h1 {
+  font-size: 8rem;
+  font-weight: lighter;
+  padding-bottom: 4rem;
+}
+
+.actual-video {
+  //ratio of 1.77777
+
+  //width: 560;
+  //height: 315;
+  width: 800;
+  height: 450;
+  margin-bottom: 4rem;
+}
