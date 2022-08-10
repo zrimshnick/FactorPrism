@@ -745,6 +745,133 @@ a {
   margin-bottom: 4rem;
 }
 
+.team-teamsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 17rem;
+  padding-bottom: 4rem;
+}
+
+.team-teamsection h {
+  font-size: 7rem;
+  font-weight: lighter;
+  padding-bottom: 4rem;
+}
+
+.team-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portrait {
+  width: 40rem;
+  border-radius: 2rem;
+  margin-left: 8rem;
+  margin-right: 4rem;
+}
+
+.team-personalinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  text-align: center;
+  margin-right: 8rem;
+}
+
+.team-contentleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.team-personalinfo h1 {
+  font-size: 6rem;
+  padding-top: 2rem;
+  font-weight: lighter;
+}
+
+.team-personalinfo h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+  padding-bottom: 0.5rem;
+  color: #3366ff;
+}
+
+.team-personalinfo h3,
+h5 {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  padding-top: 3rem;
+}
+
+.team-personalinfo h4,
+h6,
+h7 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding: 0.5rem;
+  color: gray;
+}
+
+.team-social-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4rem;
+}
+
+.small-social-tags {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.small-email-button {
+  background-color: #3366ff;
+  border-radius: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  scale: 88%;
+}
+
 html,
 body,
 * {
