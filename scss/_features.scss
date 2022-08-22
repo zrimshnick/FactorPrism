@@ -1,0 +1,216 @@
+@import "_variables";
+@import "_mixins";
+
+.feat-content {
+  @include flex-col-center;
+  font-size: 8rem;
+  padding-top: 15rem;
+}
+
+.feat-intro {
+  @include flex-col-center;
+}
+.feat-intro-title {
+  font-size: 8rem;
+  padding-bottom: 5rem;
+}
+.feat-intro p {
+  font-size: 2.75rem;
+  text-align: center;
+  padding-left: 25rem;
+  padding-right: 25rem;
+  color: gray;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+.feat-intro-end {
+  padding-top: 1rem;
+  padding-bottom: 8rem;
+  font-weight: bold;
+  color: rgb(95, 95, 95);
+}
+//////////////////////////
+.feat-enter {
+  //padding-top: 10rem;
+  font-size: 10rem;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 2s;
+  padding-bottom: 10rem;
+  color: $mainblue;
+}
+.feat-enter.visible {
+  opacity: 1;
+  //transform: translate(0, 0rem);
+}
+////////////////////////////
+.feat-highlights {
+  @include flex-col-center;
+  opacity: 0;
+  transform: translate(0, 0);
+  transition: all 6s;
+
+  h {
+    font-size: 5rem;
+    padding-bottom: 1.5rem;
+  }
+  p {
+    font-size: 3rem;
+    //line-height: 5rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    padding: 0.75rem;
+    //color: $mainblue;
+  }
+  li {
+    font-size: 2rem;
+  }
+}
+.feat-highlights.visible {
+  opacity: 1;
+  //transform: translate(0, 0rem);
+}
+.feat-highlights-1 {
+  @include flex-row-center;
+  padding-bottom: 5rem;
+}
+.feat-highlights-1-left {
+  @include flex-col-center;
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: left;
+  //width: rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  p {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
+
+.feat-highlights-2 {
+  //@include flex-row-center;
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  padding-top: 6rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  img {
+    width: 40rem;
+  }
+}
+.feat-highlights-2-left {
+  //@include flex-col-center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-right: 5rem;
+  h {
+    color: $mainblue;
+  }
+  p {
+    padding-bottom: 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    //color: $mainblue;
+  }
+  li {
+    font-size: 2.25rem;
+    padding: 0.5rem;
+    color: gray;
+  }
+}
+/////////////////////////
+.feat-what,
+.feat-competition {
+  @include flex-col-center;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 12rem;
+
+  h1 {
+    font-weight: lighter;
+    font-size: 7rem;
+    text-align: center;
+    padding-bottom: 4rem;
+  }
+  h2 {
+    font-weight: lighter;
+    text-align: center;
+    padding-bottom: 4rem;
+    line-height: 4rem;
+  }
+}
+///////////////////////////
+.feat-features {
+  padding-top: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-bottom: 10rem;
+  @include flex-col-center;
+  h {
+    font-size: 8rem;
+    padding-bottom: 4rem;
+  }
+}
+.feat-features-bubbles {
+  @include flex-row-center;
+  div {
+    @include flex-col-center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    //border: white 0.75rem double;
+    border: $mainblue 0.75rem double;
+    border-radius: 1000rem;
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem;
+    //background-color: $mainblue;
+    background-color: white;
+    transition: all ease 0.3s;
+  }
+  div:hover {
+    background-color: $mainblue;
+    border: white 0.75rem double;
+    h1 {
+      //color: white;
+      display: none;
+    }
+    p {
+      display: flex;
+      color: white;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    //color: white;
+    color: $mainblue;
+  }
+  p {
+    display: none;
+    font-size: 2.25rem;
+    font-weight: lighter;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /*.feat-hidden {
+    display: none;
+  }*/
+}
+
+///////////////////////
+.feat-contactbuttoninfo {
+  font-size: 3.75rem;
+}

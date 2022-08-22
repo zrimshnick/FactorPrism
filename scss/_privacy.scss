@@ -1,0 +1,24 @@
+@import "_variables";
+@import "_mixins";
+
+.priv-policysection {
+  font-size: 5rem;
+  @include flex-col-center;
+  padding-top: 20rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
+  padding-bottom: 8rem;
+  .contact-button {
+    margin-top: 10rem;
+  }
+}
+
+.priv-title {
+  padding-bottom: 4rem;
+  font-size: 8rem;
+}
+.priv-policycontent {
+  font-size: 3rem;
+  line-height: 3.75rem;
+  font-style: italic;
+}
