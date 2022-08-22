@@ -183,6 +183,9 @@
   div:hover {
     background-color: $mainblue;
     border: white 0.75rem double;
+    div {
+      //transform: scale(1.4);
+    }
     h1 {
       //color: white;
       display: none;
