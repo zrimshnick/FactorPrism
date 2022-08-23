@@ -126,7 +126,7 @@ var words = [
   len = words.length,
   forwards = true,
   skip_count = 0,
-  skip_delay = 40,
+  skip_delay = 20,
   speed = 70;
 var wordflick = function () {
   setInterval(function () {

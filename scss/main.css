@@ -870,6 +870,23 @@ h7 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   scale: 88%;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.small-email-button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.small-linkedin-button {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.small-linkedin-button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .priv-policysection {
