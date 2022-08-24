@@ -936,6 +936,21 @@ a {
   margin-bottom: 4rem;
 }
 
+@media screen and (max-width: 420px) {
+  .vid-videosection {
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+  }
+  .vid-videosection h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .actual-video {
+    width: auto;
+    height: auto;
+  }
+}
+
 .team-teamsection {
   display: -webkit-box;
   display: -ms-flexbox;

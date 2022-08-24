@@ -10,13 +10,23 @@
   font-weight: lighter;
   padding-bottom: 4rem;
 }
-
 .actual-video {
   //ratio of 1.77777
-
-  //width: 560;
-  //height: 315;
   width: 800;
   height: 450;
   margin-bottom: 4rem;
+}
+@media screen and (max-width: $phone-min) {
+  .vid-videosection {
+    padding-top: 12rem;
+    padding-bottom: 15rem;
+  }
+  .vid-videosection h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .actual-video {
+    width: auto;
+    height: auto;
+  }
 }
