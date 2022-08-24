@@ -95,11 +95,28 @@
     //line-height: 3.5rem;
   }
 }
+@media screen and (max-width: $phone-min) {
+  .about {
+    padding-top: 4rem;
+    font-size: 6rem;
+  }
+  .about2 {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    margin-top: 0rem;
+  }
+}
 
 .download {
   padding-top: 3rem;
   font-size: 5rem;
   margin-top: 6rem;
+}
+@media screen and (max-width: $phone-min) {
+  .download {
+    //padding-top: 0rem;
+    margin-top: 0rem;
+  }
 }
 .download-button {
   background-color: $mainblue;
