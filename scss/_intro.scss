@@ -158,6 +158,15 @@
   transform: translate(0, 0);
   transition: all 2s;
 }
+@media screen and (max-width: $phone-min) {
+  .illustrated {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .illustrated-img {
+    width: 35rem;
+  }
+}
 .illustrated.visible {
   opacity: 1;
   transform: translate(0, -10rem);
@@ -175,15 +184,18 @@
   font-size: 2.5rem;
   width: 75%;
 }
-.illustrated-img {
-  //border: 1rem black solid;
-}
 
 @media screen and (max-width: $monitor-min) {
   .illustrated-info {
-    //font-size: 2rem;
-    //line-height: 3.5rem;
     width: 85%;
+  }
+}
+@media screen and (max-width: $phone-min) {
+  .illustrated-info {
+    line-height: 3.5rem;
+  }
+  .illustrated-title {
+    font-size: 5rem;
   }
 }
 
@@ -207,6 +219,11 @@
   //border: 0.25rem white solid;
   //border-radius: 1rem;
   transition: all 0.2s;
+}
+@media screen and (max-width: $phone-min) {
+  .video-button {
+    display: none;
+  }
 }
 
 a {
@@ -297,6 +314,34 @@ a {
     margin-top: 0rem;
   }
 }
+@media screen and (max-width: $phone-min) {
+  .video-section {
+    padding-top: 2rem;
+  }
+  .case-study-button {
+    display: none;
+  }
+  .case-study {
+    padding-top: 2rem;
+  }
+  .case-study-title {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .case-study-description {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .case-study-info-image {
+    display: none;
+  }
+  .case-study-paragraphs {
+    //font-size: 2.5rem;
+  }
+}
+
 .case-study-button:after {
   content: "";
   position: absolute;
@@ -330,6 +375,19 @@ a {
   font-weight: lighter;
 }
 
+@media screen and (max-width: $phone-min) {
+  .facts-header {
+    font-size: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transform: translate(0rem, -6rem);
+  }
+  .facts-js {
+    font-size: 3.5rem;
+    transform: translate(0rem, -6rem);
+  }
+}
+
 //////////////FOOTER
 .footer-section {
   @include flex-col-center;
@@ -341,6 +399,15 @@ a {
   font-size: 3rem;
   padding: 3rem 10rem 3rem 10rem;
   line-height: 4rem;
+}
+@media screen and (max-width: $phone-min) {
+  .thankyou {
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    padding-bottom: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 .contact-icon {
   margin-right: 1.25rem;
@@ -393,6 +460,25 @@ a {
   font-weight: lighter;
   padding: 2rem 2rem 0rem 2rem;
   color: black;
+}
+.specialstyle {
+  display: none;
+  //color: gray;
+}
+@media screen and (max-width: $phone-min) {
+  .otherstyle {
+    display: none;
+  }
+  .footer-navbar-section {
+    padding-bottom: 2rem;
+  }
+  .footer-navbar-section a {
+    font-size: 2.5rem;
+    color: gray;
+  }
+  .specialstyle {
+    display: grid;
+  }
 }
 
 .footer-navbar-section a::after {
