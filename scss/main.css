@@ -1505,20 +1505,20 @@ h7 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     border: none;
-    border-radius: 1000rem;
-    width: 25rem;
-    height: 25rem;
-    margin: 1rem;
+    width: 90%;
+    height: 90%;
+    margin: 0rem;
     background-color: white;
     -webkit-transition: all ease 0.3s;
     transition: all ease 0.3s;
+  }
+  .feat-features-bubbles p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -1529,7 +1529,9 @@ h7 {
 @media screen and (max-width: 420px) {
   .feat-contactbuttoninfo {
     padding-top: 3rem;
-    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2.75rem;
     text-align: center;
   }
 }

@@ -324,19 +324,18 @@
     @include flex-col-center;
     div {
       @include flex-col-center;
-      display: flex;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      //border: white 0.75rem double;
       border: none;
-      border-radius: 1000rem;
-      width: 25rem;
-      height: 25rem;
-      margin: 1rem;
+      width: 90%;
+      height: 90%;
+      margin: 0rem;
       //background-color: $mainblue;
       background-color: white;
       transition: all ease 0.3s;
+    }
+    p {
+      display: flex;
+      padding-top: 1rem;
+      padding-bottom: 4rem;
     }
   }
 }
@@ -348,7 +347,9 @@
 @media screen and (max-width: $phone-min) {
   .feat-contactbuttoninfo {
     padding-top: 3rem;
-    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2.75rem;
     text-align: center;
   }
 }
