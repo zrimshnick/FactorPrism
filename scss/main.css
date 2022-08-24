@@ -92,6 +92,10 @@ a:hover::after {
   width: 100%;
 }
 
+a:focus {
+  outline: none;
+}
+
 a:active {
   -webkit-transform: translateY(0.7rem);
           transform: translateY(0.7rem);
