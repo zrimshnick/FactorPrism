@@ -12,8 +12,24 @@
   padding-bottom: 4rem;
 }
 
+@media screen and (max-width: $phone-min) {
+  .team-teamsection {
+    padding-top: 12rem;
+    padding-bottom: 0rem;
+  }
+  .team-teamsection h {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
+
 .team-content {
   @include flex-row-center;
+}
+@media screen and (max-width: $phone-min) {
+  .team-content {
+    @include flex-col-center;
+  }
 }
 
 .portrait {
@@ -22,6 +38,16 @@
   margin-left: 8rem;
   margin-right: 4rem;
 }
+@media screen and (max-width: $phone-min) {
+  .portrait {
+    width: 18rem;
+    border-radius: 4rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .team-personalinfo {
   @include flex-col-center;
   font-size: 3rem;
@@ -29,6 +55,7 @@
   margin-right: 8rem;
   //font-weight: lighter;
 }
+
 .team-contentleft {
   @include flex-col-center;
   text-align: center;
@@ -61,9 +88,20 @@ h7 {
   color: gray;
 }
 
+@media screen and (max-width: $phone-min) {
+  .team-personalinfo {
+    margin-right: 0rem;
+  }
+}
+
 .team-social-tags {
   @include flex-row-center;
   padding-top: 4rem;
+}
+@media screen and (max-width: $phone-min) {
+  .team-social-tags {
+    padding-top: 2rem;
+  }
 }
 .small-social-tags {
   margin-left: 1rem;
