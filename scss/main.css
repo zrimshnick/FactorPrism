@@ -1246,6 +1246,20 @@ h7 {
   font-size: 3.75rem;
 }
 
+.contact-content {
+  text-align: center;
+  font-style: normal;
+}
+
+.contact-email {
+  font-size: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 20rem;
+  font-style: normal;
+  font-weight: bold;
+  color: #3366ff;
+}
+
 html,
 body,
 * {
