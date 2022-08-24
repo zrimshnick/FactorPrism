@@ -97,8 +97,8 @@
 }
 @media screen and (max-width: $phone-min) {
   .about {
-    padding-top: 4rem;
-    font-size: 6rem;
+    padding-top: 2rem;
+    font-size: 5rem;
   }
   .about2 {
     font-size: 2.5rem;
@@ -116,6 +116,7 @@
   .download {
     //padding-top: 0rem;
     margin-top: 0rem;
+    font-size: 3.5rem;
   }
 }
 .download-button {
