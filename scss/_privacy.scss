@@ -12,7 +12,6 @@
     margin-top: 10rem;
   }
 }
-
 .priv-title {
   padding-bottom: 4rem;
   font-size: 8rem;
@@ -21,4 +20,25 @@
   font-size: 3rem;
   line-height: 3.75rem;
   font-style: italic;
+}
+
+@media screen and (max-width: $phone-min) {
+  .priv-policysection {
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    .contact-button {
+      margin-top: 1rem;
+    }
+  }
+  .priv-title {
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .priv-policycontent {
+    font-size: 2.15rem;
+    line-height: 3.25rem;
+  }
 }

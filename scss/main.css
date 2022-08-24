@@ -1177,6 +1177,27 @@ h7 {
   font-style: italic;
 }
 
+@media screen and (max-width: 420px) {
+  .priv-policysection {
+    padding-top: 12rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .priv-policysection .contact-button {
+    margin-top: 1rem;
+  }
+  .priv-title {
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .priv-policycontent {
+    font-size: 2.15rem;
+    line-height: 3.25rem;
+  }
+}
+
 .feat-content {
   display: -webkit-box;
   display: -ms-flexbox;
