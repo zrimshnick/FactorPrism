@@ -725,8 +725,7 @@ a {
     color: gray;
   }
   .specialstyle {
-    display: -ms-grid;
-    display: grid;
+    display: none;
   }
 }
 
