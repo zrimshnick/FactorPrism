@@ -20,6 +20,13 @@ header {
   z-index: 1;
   padding-bottom: 10rem;
 }
+@media screen and (max-width: $phone-min) {
+  header {
+    background-image: none;
+    background-color: white;
+    padding-bottom: 0rem;
+  }
+}
 
 .logo {
   display: flex;
@@ -36,6 +43,18 @@ header {
   height: 8rem;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: $phone-min) {
+  .logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .logo img {
+    width: 18rem;
+    height: 6rem;
+  }
+}
 
 .navbar {
   @include flex-row-center;
@@ -49,6 +68,12 @@ header {
   padding-right: 1.5rem;
   margin-left: 0rem;
   margin-right: 0rem;
+}
+
+@media screen and (max-width: $phone-min) {
+  .navbar a {
+    //font-size: 2rem;
+  }
 }
 
 a {

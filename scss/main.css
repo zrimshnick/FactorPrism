@@ -22,6 +22,14 @@ header {
   padding-bottom: 10rem;
 }
 
+@media screen and (max-width: 420px) {
+  header {
+    background-image: none;
+    background-color: white;
+    padding-bottom: 0rem;
+  }
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +49,19 @@ header {
   height: 8rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .logo img {
+    width: 18rem;
+    height: 6rem;
+  }
 }
 
 .navbar {
