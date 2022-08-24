@@ -11,6 +11,18 @@
   font-weight: lighter;
 }
 
+@media screen and (max-width: $phone-min) {
+  .dwnld-downloadsection {
+    padding-top: 12rem;
+    padding-bottom: 3rem;
+  }
+  .dwnld-downloadsection h1 {
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+}
+
 .dwnld-downloadoptions {
   @include flex-row-center;
   justify-content: space-evenly;
@@ -44,6 +56,35 @@
     height: 6rem;
   }
 }
+
+@media screen and (max-width: $phone-min) {
+  .dwnld-downloadoptions {
+    @include flex-col-center;
+  }
+  .dwnld-downloadoptions a {
+    width: auto;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+  }
+  .dwnld-optionboxes {
+    div {
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
+    img {
+      height: 4rem;
+    }
+  }
+}
+
 .dwnld-optionboxes:hover {
   border-radius: 1.5rem;
   transform: translateY(-0.2rem);
@@ -56,4 +97,13 @@
 }
 .dwnld-optionboxes::after {
   transform: translateY(0.5rem);
+}
+
+@media screen and (max-width: $phone-min) {
+  .dwnld-microsoft {
+    border-color: rgba(0, 166, 239, 255);
+  }
+  .dwnld-ppt {
+    border-color: rgba(209, 68, 36, 255);
+  }
 }
