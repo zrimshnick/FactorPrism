@@ -1,2 +1,134 @@
 @import "_variables";
 @import "_mixins";
+
+.blog-blogsection {
+  @include flex-col-center;
+  font-size: 6rem;
+  padding-top: 15rem;
+}
+@media screen and (max-width: $phone-min) {
+  .blog-blogsection {
+    padding-top: 12rem;
+    font-size: 6rem;
+  }
+}
+.blog-headersection {
+  @include flex-col-center;
+  padding-bottom: 4rem;
+}
+.blog-title {
+  font-size: 8rem;
+  padding-bottom: 1rem;
+}
+.blog-headerdescription {
+  font-size: 3.5rem;
+  color: gray;
+}
+
+@media screen and (max-width: $phone-min) {
+  .blog-headersection {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .blog-title {
+    font-size: 5rem;
+  }
+  .blog-headerdescription {
+    font-size: 3rem;
+  }
+}
+
+.blog-allpostscontainer {
+  @include flex-col-rev-center;
+}
+.blog-post {
+  border: 0.2rem gray solid;
+  border-radius: 0.75rem;
+  padding: 3rem 8rem 5rem 8rem;
+  margin: 5rem 35rem 5rem 35rem;
+  //height: 30rem;
+}
+@media screen and (max-width: $phone-min) {
+  .blog-post {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    margin: 3rem 5rem 3rem 5rem;
+    width: 35rem;
+  }
+}
+.blog-post h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.blog-post h2 {
+  font-size: 3.5rem;
+  margin: 1.5rem;
+  font-weight: lighter;
+  padding-bottom: 1rem;
+}
+.blog-post p {
+  font-size: 2.1rem;
+  margin: 1.5rem;
+  line-height: 3.1rem;
+  //transition: all 1s ease-in-out;
+}
+@media screen and (max-width: $phone-min) {
+  .blog-post h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .blog-post h2 {
+    font-size: 2.75rem;
+  }
+  .blog-post p {
+  }
+}
+
+.blog-post a {
+  font-size: 2.1rem;
+  margin: 1.5rem;
+  line-height: 3.1rem;
+  //transition: all 1s ease-in-out;
+  padding: 0rem;
+  color: $mainblue;
+}
+.blog-post a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $mainblue;
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+.blog-post a:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+.blog-post {
+  .blog-hyperlink {
+    font-size: 2.1rem;
+    margin: 0rem;
+    line-height: 3.1rem;
+    //transition: all 1s ease-in-out;
+    padding: 0rem;
+    color: $red;
+    font-weight: lighter;
+  }
+  .blog-hyperlink:after {
+    background-color: transparent;
+  }
+}
+.blog-images {
+}
+@media screen and (max-width: $phone-min) {
+  .blog-images {
+    width: 32rem;
+  }
+}

@@ -30,29 +30,321 @@
     </header>
 
     <section class="blog-blogsection">
-      <section class="blog-header">
-        <header class="blog-title">Developer's Notes</header>
-        <h class="blog-headerdescription"
-          >Find out the latest on FactorPrism!</h
-        >
+      <section class="blog-headersection">
+        <div class="blog-title">Developer's Notes</div>
+        <div class="blog-headerdescription">Find out the latest on FactorPrism!</div>
+          
+        </div>
       </section>
       <section class="blog-allpostscontainer">
         <div class="blog-post">
-          <h1 class="blog-posttitle">TITLE 1</h1>
+          <h1 id="post1"class="blog-posttitle">Your biggest analytics problem is the one you didn’t know you had.</h1>
+          <h2 class="blog-postsubtitle">Bad news: Your analytics workflow has a problem.</h2>
           <p class="blog-postcontent">
-            CONTENT1 CONTENT1 CONTENT1 Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Tempore aliquam officiis nisi dicta accusamus
-            totam eum deleniti quam, ut esse exercitationem incidunt tempora
-            ipsum porro odio tenetur velit laborum. Ipsam.
+            Your CRM system has collected data on each of your sales transactions – who the purchaser is, where they are from, what they bought, where they bought it, and half a million other data points.  You’ve cleaned and prepped that data, and you’re finally ready to buckle down for countless hours with Tableau or Excel or some other Visual Analytics tool, painstakingly executing the tedious but necessary work of finding the meaningful patterns in your data.<br><br>
+
+            You have to.  Before you finally can answer the Why – the model-building predictive analytics that you really want your data scientists doing – you need to know the What.   These are the descriptive analytics: what are the most impactful trends in our data, and where are they? <br><br>
+
+            You’ve been told you need shinier, fancier visualization tools to help find these trends – that faster and more vibrant charting will make these trends pop before your analysts’ eyes, so that they can get through this phase a few hours faster and slightly less exhausted. <br><br>
+
+            Countless hours of analyst time spent searching for needles in haystacks. <br><br>
+
+            Of course, that’s the way it has to be done. Unavoidable. <br><br>
+          </p>
+          <h2>Or is it?</h2>
+          <p>Look around you. Facebook can spot your face in the background of a family photo. Amazon can identify your voice over the kitchen fan and your kids’ cartoons. And Google has cars that can drive you from here to Topeka without a steering wheel. <br><br>
+
+            Yet we still have to spot these trends ourselves? <br><br>
+            
+            Well, not anymore. Enter FactorPrism. <br><br>
+            
+            FactorPrism is revolutionary data discovery software that automatically uncovers the most meaningful patterns from your sales data, no matter how buried or convoluted.  It teases out factors you wouldn’t be able to find no matter how much time you spent looking.  With FactorPrism, accurately identifying the customer and product segments that have the most meaningful performance impacts is as easy as clicking a button. <br><br></p>
+            <h2>Good news: Now you have a solution – FactorPrism.</h2>
+            <p>Want to learn more? Watch our demo video and download a free trial license of our software above.</p>
+
+<!--           <a class="blog-postreadmore">Read More</a> -->
+        </div>
+        <div class="blog-post">
+          <h1 id="post2"class="blog-posttitle">The FactorPrism Challenge</h1>
+          <p class="blog-postcontent">
+            The first thing we ask folks when we are talking to them about automated data mining with FactorPrism is, “How do you do this today?”. That is, if we were to give you a sales dataset with weekly data by product, geography, and customer type, for example, how would you go about finding meaningful patterns in that data? Would you use Tableau, PivotTables/Charts, or some sort of other data visualization tool like Looker? What is your workflow for identifying those patterns? And, perhaps most importantly, how accurate is this process? <br><br>
+
+            We claim that FactorPrism is far and away the fastest and most accurate way to tease out meaningful patterns in transactional data. Today, we are putting our money where our collective mouth is and introducing The FactorPrism Challenge.  <br><br>
+
+            Quite simply, our challenge to you, the data scientist, is this: Download the below CSV file containing a sample 300k rolled up sales transactions (from a de-identified data source). Use your current techniques for finding out what the major performance patterns are in this data set, and data level they reside at (geographical, product, etc).  <br><br>
+
+            Then, sign up for a free trial of FactorPrism, run through FactorPrism (takes about 2 minutes to set up, 5-7 minutes to run), and compare the results.  <br><br>
+
+            We guarantee the results you find with FactorPrism are deeper, more accurate, and more well defined. And, not to mention, much easier to produce!  <br><br>
+
+            Now imagine this challenge but on 300M records instead. You tell us, would your rather do it your way, or the FactorPrism way?  <br><br>
+
+            Happy Factoring!
+          </p>
+          <a href="/downloadables/fp_challenge_data.csv" class="blog-downloadlink">Download the FactorPrism Challenge Dataset</a>
+<!--           <a  class="blog-postreadmore">Read More</a> -->
+        </div>
+        <div class="blog-post">
+          <h1 id="post3"class="blog-posttitle">Deep Mining the NYC 311 Dataset: A FactorPrism Case Study (1/3)</h1>
+          <p class="blog-postcontent">
+            As you may be aware, NYC has a vast trove of free data available through its NYC Open Data initiative (<a target="_blank" href="https://opendata.cityofnewyork.us/" class="blog-hyperlink">https://opendata.cityofnewyork.us/ </a>).   We thought it would be fun to see what FactorPrism could do with some of its data, so we decided to do some digging. <br><br>
+
+            It turns out one of the biggest (by records) and most popular data sets is the transactional records for the 311 database, as found here: <br><br>
+
+            <a target="_blank" href="https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9" class="blog-hyperlink">https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9 </a><br><br>
+
+            This dataset lists every 311 call made to the city between 2010 and today.  Over 50 million records!  Clearly lots of insights to be found, if only we had the time! <br><br>
+
+            Well, thanks to FactorPrism, getting some very interesting results from the data took no longer than a lunch break. <br><br>
+          </p>
+          <h2>Starting with Dessert – The Results</h2>
+          <p>Before we get into the really-not-that-nitty-gritty details bout how we used FactorPrism to get deep insights into this data quickly in the next two posts, first we thought we’d show you our interesting findings. <br><br>
+
+          As we will describe later, we chose the time period 9/2013 to 3/2017 to investigate, as, by looking at the overall data, there was a clear trend upwards during that time (note, the apparent recent decline is probably due to incomplete data, so we disregarded it for now):<br></p>
+          <img src="/img/setup-timeframe-1.webp" class="blog-images"> <br><br>
+          <p>Our question was whether this trend was just an overall increase in usage in the service, or whether it was indicative of growth in just a smaller segment. <br><br>
+
+          In a nice result for the city, it seems that overall  usage is increasing 11%.   This manifests itself as an 11% increase in our “OVERALL” factor, which happened to be our most impactful factor: <br></p>
+          <img src="/img/results-overall-1.webp" class="blog-images"> <br><br>
+          <p>We see some seasonality in the data here – looks as if calls tend to peak in the summer.  Also, we can see that 2015 seems to have a moderately higher peak than 2016. <br><br>
+
+          Looking through our segments a bit, we see some other surprising results.  For example, our 4th biggest factor, HPD (Housing Preservation and Development), shows an overall decline of around 25% over the period.  Note this factor would have been much harder to identify if the overall upward effect had not already been teased out!<br></p>
+          <img src="/img/results-hpd-1.webp" class="blog-images"> <br><br>
+          <p>Other sub-segments show interesting patterns.  For example, unsurprisingly, Street Condition complaints spike towards the summer, but were much higher in 2015 than in surrounding years.<br> </p>
+            <img src="/img/results-street-cond-1.webp" class="blog-images"> <br><br>
+          <p>However, on top of the overall Street Condition factor, we see a particular spike in potholes, which was actually biggest in 2014:<br> </p>
+          <img src="/img/results-street-cond-pothole-1.webp" class="blog-images"> <br><br>
+          <p>This is the kind of thing that would have gone overlooked had you just looked at the data for potholes, where the spikes were roughly level for 2014 and 2015.  FactorPrism teases out that the spike in 2014 was more isolated to potholes, whereas 2015 was an overall trend in Street Condition complaints.<br><br>
+          The last interesting factor we will mention is the seasonality in water system complaints.<br> </p>
+          <img src="/img/results-water-system-1.webp" class="blog-images"> <br><br>
+          <p>Clearly, these tend to spike sharply in July and December.  However, while we saw a very sharp spike in the summer of 2016, the surge in calls in the winter was much less intense last year. <br><br>
+
+          In summary, we see an overall growth trend in the usage of the 311 data system.  When controlling for that trend, we see a reduction in the number of HPD calls, and significant seasonality in street condition and water system complaints. <br><br>
+            
+          Not bad for an hour’s worth of work! (well, mostly it was the computer working).  For more on that, see the next post in our series. <br><br>
+            
+          Now that you see what we can do looking at 50 million calls of a city with 8 million customers, imagine what we can do for your business! <br><br>
+            
+          Until next time, Happy Factoring! </p>
+       </div>
+       <div class="blog-post">
+        <h1 id="post4"class="blog-posttitle">Deep Mining the NYC 311 Dataset: A FactorPrism Case Study (2/3) - Data Configuration</h1>
+        <p class="blog-postcontent">
+          In our previous post, we described the results of our investigation into the NYC 311 dataset using FactorPrism.  In this post, we’ll dive a little more into how we attained that data and prepared it for analysis. While some of this post’s content is probably only relevant for this particular dataset, it is still interesting even in that limited case, and most of what we do here is generally applicable.  In this way, this can serve as a tutorial for how you would set up your own dataset. <br><br>
+          </p>
+          <h2>Part One: Getting the data</h2>
+          <p>The unprocessed 311 data can be found at the Socrata server <a target="_blank" href="https://nycopendata.socrata.com/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9" class="blog-hyperlink">here</a>.  However, this data is just the raw transactions.  While FactorPrism can handle this level of data, it is going to run faster (and be a smaller file), if we trim some columns and aggregate it to a less granular time period first.  We could do this outside of Socrata, of course, using a simple GROUP BY query in SQL, but Socrata nicely lets us do this on their servers, saving us hours of downloading and processing time. <br><br>
+
+          To do this, we visited the Explore Data section of the aforementioned page.  Here, we can use the “Sort & Roll-Up” feature to do what we need.  Now, in this case we are primarily interested in four dimensional hierarchies: Agency, Type, Location, and Location Type (we will get back to these later when we get to FactorPrism).  To aggregate to the relevant column-level – Agency, Agency Name, Complaint Type, Descriptor, Location Type, Incident Zip, and City – we include them in the GROUP BY clause. <br><br>
+            
+          Also, we only need this data at the monthly level, so we are also going to GROUP BY Month(“Created Date”). <br><br>
+            
+          Finally, we need an aggregation column.  In this case, we want to count the number of records (i.e. 311 calls), so we are going to simply count Unique Keys (1 key per call).  (In other dataset types, e.g. sales data, we might want to sum sales instead). <br></p>
+          <img src="img/socrata-roll-up-selection.webp" class="blog-images"><br><br>
+          <p>We then simply hit the “Apply” button, and download the resulting dataset.  Thus, we have a nicely processed file at the month-agency-type-location-location type level, with a count of records for each.  Beautiful. <br><br></p>
+
+          <h2>Part Two: Getting the data where we can use it</h2>
+          <p>The second part of preparing the data for FactorPrism is putting into an SQL database where FactorPrism can read it from.  In this case, we are going to use Microsoft SQL Server.  (Free versions of SQL Server can be obtained <a target="_blank" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" class="blog-hyperlink">here</a>; download either SQL Server Express or SQL Server Developer Edition.  Also, download SQL Server Management Studio <a target="_blank" href="https://go.microsoft.com/fwlink/?linkid=849819" class="blog-hyperlink">here</a>.) <br><br>
+
+          The import process into SQL Server can be a little tricky, so we wanted to walk you through it.  To start, we open SQL Server Management Studio, and connect to our server (it should be the one pre-populated in the dialog box). <br><br>
+              
+          If we don’t already have a database created where want to place our file, we right-click on “Databases” in the Object Explorer window, and select “New Database”.  In the next dialog, we specify a name for our database, and click “OK”.<br><br>
+              
+          Now we are ready to import our data. we right click our new database and select Tasks, and then the “Import Data” feature. <br></p>
+          <img src="img/setup-SS-import.webp" class="blog-images"><br><br>
+          <p>In this case, since we are importing from a CSV file, we select “Flat File Source”, and then find our CSV file in the resulting dialog box.<br></p>
+          <img src="img/ss_2.webp" class="blog-images"> <br><br>
+          <p>We also make sure we include double quotes – ” – as our “Text Qualifier”. <br><br>
+
+          Now for the slightly tricky part.  We now click “Advanced” on the left hand side, as we need to specify the types and lengths of our input data. <br></p>
+          <img src="img/ss_3.webp" class="blog-images"><br><br>
+          <p>Here we have to specify our data types.  One useful feature is using the “Suggest Types” button to get started – you can have it scan up to 1 million rows to guess what the fields are (keep in mind this might take a few minutes).  I recommend 100,000 in this case.  (Also suggest padding strings by 100%, to be safe).  When we are done, we need to ensure it guessed the types correctly.  Mainly, that “Created Date” is a DT_DATE datatypes, Agency through City are all DT_STR datatypes, and that Unique Key is a tw0-bit unsigned integer (DT_UI2). <br><br>
+
+          We then select next, and select as our destination “SQL Server Native Client 11.0”, and specify our database where we want to import this table.  We then select “Next”.  <br><br>
+                  
+          One more subtlety.  On the next screen, select “Edit Mappings”, and make sure “Unique Key” is being imported as a “Float” (this is currently a requirement for FactorPrism, but will be relaxed in the next release). <br><br>
+                  
+          We then can hit finish, and the data should import correctly!  If it throws an error, it is most likely due to truncation errors.  Delete the table it imported and try again, increasing the string field length (you can set them all at 200 just to be safe if you’d like). <br><br>
+                  
+          Great! Now we have the data all downloaded and imported into our SQL Server.  Now it is all ready for FactorPrism to find our answers.  Sorry this was tedious, but the good news is it is by far the hardest part of the process.  Finding our patterns is the easy part!  More on that in the next and last post of this series. <br><br>
+                  
+          Until then, Happy Factoring!</p>
+        </div>
+        <div class="blog-post">
+          <h1 id="post5"class="blog-posttitle">Deep Mining the NYC 311 Dataset: A FactorPrism Case Study (3/3) - FactorPrism Setup</h1>
+          <p class="blog-postcontent">
+            Now that we’ve downloaded our data and loaded into SQL Server in the previous post, we get to the fun part: running FactorPrism.  In a few simple steps, we load the data into FactorPrism, select our time period of interest, and specify our field hierarchies.  It will take you longer to read this than to actually do it, most likely. <br><br></p>
+          <h2>Step 1: Loading the Data</h2>
+          <p>
+            After opening FactorPrism, we select the “Connect to Data Provider” button.  We select “Microsoft SQL Server”, and then our server name, and press OK.  We then select our database name and table name. <br><br>
+
+            Finally, we need to select the date field and the data field.  Our date field is “Created Date”, and our data field is “Unique Key” (since this field actually contains the count of Unique Keys).  Also, we optionally add a data label, “# of Calls”.  This is what our configuration looks like when complete: <br>
+          </p>
+          <img src="img/setup-loaddata.webp" class="blog-images"><br><br>
+          <p>
+            We simply hit the “Load Data” button, and we are on to our date selection part. <br><br>
+          </p>
+          <h2>Part 2: Date Selection</h2>
+          <p>
+            As described in our first blog post of this series, we select the 9/1/2013 – 3/1/2017 portion to explore.  We simply select this using the mouse. <br>
+          </p>
+          <img src="img/setup-timeframe-1.webp" class="blog-images"><br><br>
+          <h2>Part 3: Hierarchies</h2>
+          <p>
+            The last bit of setup is simply describing what our hierarchies are – that is, what is the taxonomy of our data features.  Simply put, we want to tell FactorPrism what types of fields we are interested in finding patterns over, and how those fields relate to others of the same type.  For example, since (in NYC anyway), zips are a subset of cities, in our Location hierarchy, we list City first, then Incident Zip.<br><br>
+
+            In our example, we have 4 types of hierarchies: Agency, Type (of Complaint), Location Type, and Location.  This is what our hierarchies look like when filled out in FactorPrism:<br></p>
+          <img src="img/setup-hierarchies.webp" class="blog-images"><br><br>
+          <p>
+            (This might seem a little complicated, but practically its very intuitive.  For example, if this were retail data, our Product Hierarchy might have category, sub-category, product, and subproduct fields.) <br><br>
+
+            That’s all!  Now we just click the Execute button, and let FactorPrism do the rest!  It really is as simple as that.  You can view the results of this analysis in our first post.<br><br>
+            
+            We hope you enjoyed our series on mining the NYC 311 Dataset!  We will be posting other similar examples very soon.<br><br>
+            
+            Stay tuned, and Happy Factoring!<br><br>
+            
+            – Dave</p>
+        </div>
+        <div class="blog-post">
+          <h1 id="post6"class="blog-posttitle">Automatically finding hidden patterns in NYSE stock prices</h1>
+          <p class="blog-postcontent">
+            Besides uncovering latent sales patterns in retailer data and detecting call-center trend shifts, a major application of FactorPrism is to financial data, e.g. stock market data.  Stock market data is a perfect fit for our software, as it <br>
+
+            a) is time series<br>
+            b) is transactional<br>
+            c) is hierarchical, namely for equity categories<br><br>
+
+            What exactly would we be looking to find?  Well, we want to uncover below-surface patterns in stock categories.  For example, even if overall technology stocks are trending upward at 5% YTD, do we see a YTD decline within a subspace of technology, like software?<br><br></p>
+          <h2>Preparing the data</h2>
+          <p>
+            To demonstrate a typical use case in mining equity prices, we pulled historical end-of-day (EOD) data for the NYSE for 2017 from a publicly available data source.  Next, we merged in stock categorization and outstanding share information from NASDAQ <a target="_blank" href="https://www.nasdaq.com/market-activity/stocks/screener?exchange=NYSE" class="blog-hyperlink">here</a> (and cleaned out any missing data). <br><br>
+
+            To perform our analysis, we need to use market capitalizations as opposed to stock prices, since market caps are additive.  In other words, the market cap of all stocks is equal to their sum; the same does not hold true for stock prices. <br><br>
+
+            So we merged the two datasets together, and determine EOD market caps from prices, in one fell swoop in SQL Server like so: <br>
+          </p>
+          <img src="img/stock-code.png" class="blog-images" width="60%"><br><br>
+          <p>
+            That’s it – we now have a flat file ready to be analyzed with FactorPrism.<br><br>
+          </p>
+          <h2>Interesting Findings in No Time</h2>
+          <p>
+            We set up FactorPrism very simply as below.  Note we decided to mine over the entire time period, because FactorPrism will be able to analyze this data nearly instantaneously (so why not).<br>
+          </p>
+          <img src="img/Stock_FPSetup_1.webp" class="blog-images"><br><br>
+          <p>
+            Next, we defined our feature hierarchies.  In this case, we only have one hierarchy of features, which we called “Type” to be super-creative.  Note we included both Symbol and Name, even though they are duplicative, just for readability sake in the results (it does not affect performance). <br>
+          </p>
+          <img src="img/Stock_FPSetup_2_Hiers.webp" class="blog-images"><br><br>
+          <p>
+            That’s all the setup there is.   Since there is only one hierarchy, FactorPrism executed this analysis in just a few seconds.
+          </p>
+          <h2>What Did We Find?</h2>
+          <p>
+            Not surprisingly, our biggest impact was due to the overall market trend (as shown in our overall factor), showing a significant upward movement in early 2017: <br>
+          </p>
+          <img src="img/Stock_FPResults_1_Overall-1.webp" class="blog-images"><br><br>
+          <p>
+            Not every category has had such a rosy year, however.  When factoring out the overall upward trend, energy has seen its overall cap decline by a stark 14%: <br>
+          </p>
+          <img src="img/Stock_FPResults_1_Energy-1.webp" class="blog-images"><br><br>
+          <p>
+            Note this decline would have been harder to see had FactorPrism not inherently teased out the upward Overall factor.<br><br>
+
+            One set of factors is particularly interesting and demonstrates the teasing-out power of the software.  We see a large decrease (3 to 5%) in the market capitalization of “Major Banks” (places like Citigroup and Capital One):<br>
+          </p>
+          <img src="img/Stock_FPResults_3_MajorBanks.webp" class="blog-images"><br><br>
+          <p>
+            However, we see almost the same increase when we look at the behavior this year of “Commercial Banks” (places like Barclays PLC, RBS, and RBC):<br>
+          </p>
+          <img src="img/Stock_FPResults_4_CommercialBanks-1.webp" class="blog-images"><br><br>
+          <p>
+            Finally, in what is surely good news, we see a pickup in a particular type of retail stock, that of building materials:<br>
+          </p>
+          <img src="img/Stock_FPResults_5_BuildingMaterials.webp" class="blog-images"><br><br>
+          <p>
+            There are obviously a lot of trends (10, to be exact) that we haven’t explained here, many of which are super interesting and surprising, so we encourage you to download a free trial of FactorPrism and explore this dataset, and the rest of your transactional data, easily and automatically.  Please let us know how it goes in the comments! <br><br>
+
+            Happy Factoring!<br><br>
+
+            P.S.  Want a customized demo of FactorPrism on your organization’s data?  Please contact us at info@factorprism.com and we’d be happy to discuss!
           </p>
         </div>
         <div class="blog-post">
-          <h1 class="blog-posttitle">TITLE 2</h1>
+          <h1 id="post7"class="blog-posttitle">Exciting new FactorPrism release! Download today!</h1>
           <p class="blog-postcontent">
-            CONTENT2 CONTENT2 CONTENT2 Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Tempore aliquam officiis nisi dicta accusamus
-            totam eum deleniti quam, ut esse exercitationem incidunt tempora
-            ipsum porro odio tenetur velit laborum. Ipsam.
+            Today we are excited to announce our latest beta release of FactorPrism, with a lot of awesome new features to make using FactorPrism even easier!<br><br>
+
+            <a style="color:#3366ff" class="blog-hyperlink">Import directly from CSV/Text file</a> – one of our most requested feature updates.  Now, you no longer need SQL Server or MySQL databases to run FactorPrism (though if you already have them, that’s fine too!).<br><br>
+
+            <a style="color:#3366ff" class="blog-hyperlink">Time rollups directly in FactorPrism </a> – now, if you have granular timestamps on transactions, no need to roll them up to days, weeks, or months outside FactorPrism – this is built right in with the new “Date Rollup” feature.<br><br>
+
+            <a style="color:#3366ff" class="blog-hyperlink">Bug fixes (thanks for all the feedback </a> – keep it coming!!)<br><br>
+
+            <a style="color:#3366ff" class="blog-hyperlink">No need to download a separate license file for trial usage </a> – it’s built right in!<br><br>
+
+            There’s never been a better time to join the thousands of users saving countless hours using FactorPrism, so download it today!  And if you like it, please tell your friends!<br><br>
+
+            Happy Factoring!
+          </p>
+        </div>
+        <div class="blog-post">
+          <h1 id="post8"class="blog-posttitle">Tutorial Walkthrough: Pharma Data</h1>
+          <p class="blog-postcontent">
+            To provide another use case tutorial for FactorPrism, in this post we’d like to walkthrough FactorPrism with pharmaceutical market data.  Pharma data is perfectly suited for FactorPrism’s analysis: TRx (prescription) data typically has many dimensions like geography, payer, specialty, and product type, wherein trends may be found within any of these levels, or across them.<br><br>
+          </p>
+          <h2>Setup</h2>
+          <p>
+            First and foremost, you need to download and install FactorPrism.  (Also grab the latest PowerPoint template there if you don’t already have one).  Email us for a trial license if you need one.<br><br>
+
+            Before starting FactorPrism, we must prepare a dataset to analyze.  FactorPrism ingests vertical files – that is, where each row represents a single data point.  Moreover, the data should be rolled up to the level at the most granular level which you want to analyze.  For example, in our simulated data, we have aggregated the data to the [Week-Area-Region-Channel-PBM] level, so that we can analyze it at this or any more aggregated level we wish.  So in our example, we have the following fields in our dataset: [Week], [Area], [Region], [Channel], [PBM], and [TRx], where [TRx] is our summed measure variable, GROUPED BY the other columns.  This is a snippet of the first few rows of the data we will be importing in this example:<br>
+          </p>
+          <img src="img/0_dataset.webp" class="blog-images"><br><br>
+          <p>
+            Once we have prepared our dataset, we open FactorPrism and import it.  In this example, we have saved our simulated pharma dataset in a CSV file, so we hit the “Import CSV or TXT” button and select the file.  We then select our date field and data field, which in this case are “Week” and “TRx” respectively, and optionally give a data unit label which in this case is also “TRx”. <br>
+          </p>
+          <img src="img/1_dataload.webp" class="blog-images"><br><br>
+          <p>
+            Next, we hit the “Load Data” button.  In a moment, our overall data trend loads, and we select our desired time region to analyze.<br>
+          </p>
+          <img src="img/2_timeselect.webp" class="blog-images"><br><br>
+          <p>
+            The final step in our setup process is specifying our feature groups.  We first give our groups labels, in this case “Payer” and “Geography”, and specify which fields are included in each.  Notice that the fields must be specified in hierarchical order, largest to smallest from left to right – e.g., if Areas contain Regions, then [Area] is first, then [Region].  Likewise, since Channels contain PBMs, [Channel] is first, then [PBM].<br>
+          </p>
+          <img src="img/3_hierarchies.webp" class="blog-images"><br><br>
+          <p>
+            That’s all the setup there is!  We then just hit the “Execute” button in the upper right hand corner of our screen, and let FactorPrism do the rest.<br><br>
+          </p>
+          <h2>Results</h2>
+          <p>
+            Once we’ve run FactorPrism, we are presented with the Results screen, as below.<br>
+          </p>
+          <img src="img/4_results.webp" class="blog-images"><br><br>
+          <p>
+            Let’s break this pane down.  On the left, we see the list of our 16 most meaningful segments FactorPrism found during this time period.  Note, although we refer to them as “segments”, they are not mutually exclusive – a record can be a member of several significant segments.  In fact, all records are part of the “Overall” segment, which is usually the most meaningful.  The “Overall” segment includes any seasonality seen over all the records, as well as any trend seen throughout all the records.<br><br>
+
+            The great part about FactorPrism is that it separates out the impacts when there are several significant effects.  For example, in the segment highlighted above, [Managed Care – AdvancePCS], we see in the raw data – the graph to the far right – that there was a fair bit of volatility in this time period.  However, when other effects are isolated out – e.g. the Overall seasonality and trend are removed – we see a clear rise at the beginning of 2020 – shown in the “Segment Impact” graph in the middle.  This impact is specified as a percentage – 12.6% at maximum.  What this means is that any record part of [Managed Care – AdvancePCS] is given an average 12.6% boost by being a member of that segment (in addition to any increases/declines contributed by other segments it may be a part of).<br><br>
+
+            On the top right, we can see that the contribution of this effect within [Managed Care – AdvancePCS] is estimated to be 6,647 TRx during that time period, which accounts for about 2.2% of all the impacts FactorPrism found during this period, making it the 6th most important contributor.<br><br>
+
+            Note on this page we can select to export our results as a raw CSV file, or connect to the freely provided PowerPoint templates and export our results as a fully formatted PowerPoint.<br><br>
+
+            That’s all there is to it!  It really is that easy to find the most meaningful trends in your data using FactorPrism.<br><br>
+          </p>
+          <h2>Optional: Filters</h2>
+          <p>
+            One quick thing: FactorPrism has a very useful optional feature of filtering down to a lower level before running the analysis (so you don’t have to filter the dataset beforehand).  This is found in the table below our Feature Groups.  We first hit the “Refresh Filters” button, and then specify any filters we want.  For example, if we were only interested in what was driving performance in the “Southeast” territory, we could filter as below:<br>
+          </p>
+          <img src="img/5_filters.webp" class="blog-images"><br><br>
+          <p>
+            We are confident FactorPrism will save you loads of time in finding the most meaningful trends in your data.  Let us know how it goes, and Happy Factoring!
+          </p>
+        </div>
+        <div class="blog-post">
+          <h1 id="post9"class="blog-posttitle">FactorPrism Academic Paper Released!</h1>
+          <p class="blog-postcontent">
+            We are excited to announce the release of the FactorPrism academic background paper, detailing the use of the novel basis pursuit algorithmic backend. Find the paper at this <a href="downloadables/4-2022 FactorPrism Academic Article.pdf" target="_blank" class="blog-hyperlink">link</a> – and please share your feedback!
           </p>
         </div>
       </section>
