@@ -20,6 +20,9 @@ header {
   z-index: 1;
   padding-bottom: 10rem;
 }
+.hamburger {
+  display: none;
+}
 @media screen and (max-width: $phone-min) {
   header {
     background-image: none;
