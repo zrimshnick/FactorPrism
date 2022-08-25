@@ -1691,6 +1691,13 @@ h7 {
   color: #3366ff;
 }
 
+@media screen and (max-width: 420px) {
+  .contact-email {
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+}
+
 html,
 body,
 * {
