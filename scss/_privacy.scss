@@ -17,9 +17,18 @@
   font-size: 8rem;
 }
 .priv-policycontent {
-  font-size: 3rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+  font-size: 2.4rem;
   line-height: 3.75rem;
-  font-style: italic;
+  color: gray;
+  //font-style: italic;
+}
+@media screen and (max-width: 1500px) {
+  .priv-policycontent {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 @media screen and (max-width: $phone-min) {
@@ -40,5 +49,7 @@
   .priv-policycontent {
     font-size: 2.15rem;
     line-height: 3.25rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }

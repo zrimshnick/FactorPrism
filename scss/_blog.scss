@@ -42,8 +42,9 @@
   @include flex-col-rev-center;
 }
 .blog-post {
-  border: 0.2rem gray solid;
+  border: 0.1rem $mainblue solid;
   border-radius: 0.75rem;
+  box-shadow: 0rem 0rem 1rem 0.05rem $mainblue;
   padding: 3rem 8rem 5rem 8rem;
   margin: 5rem 35rem 5rem 35rem;
   //height: 30rem;
