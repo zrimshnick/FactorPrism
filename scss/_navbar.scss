@@ -140,21 +140,27 @@ a:active {
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    align-items: end;
+    background-color: white;
     width: 100%;
-    border-radius: 1rem;
-    border-bottom: $mainblue 0.4rem;
+    border-radius: 0.5rem;
+    border-bottom: $mainblue 0.2rem;
     text-align: center;
-    transition: 0.3s;
+    transition: 0s;
     //box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .navbar.active {
     margin-top: 2rem;
-    padding-right: 0rem;
+    padding-left: 15rem;
+    padding-right: 2rem;
     padding-bottom: 0.5rem;
     left: 0;
-    border-bottom: $mainblue 0.6rem solid;
-    border-radius: 2rem;
+    justify-content: right;
+    border-bottom: white 0.2rem solid;
+    border-radius: 0rem;
+    a {
+      color: $mainblue;
+    }
   }
   .nav-item {
     margin-top: 0.5rem;

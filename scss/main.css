@@ -147,21 +147,31 @@ a:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #fff;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    background-color: white;
     width: 100%;
-    border-radius: 1rem;
-    border-bottom: #3366ff 0.4rem;
+    border-radius: 0.5rem;
+    border-bottom: #3366ff 0.2rem;
     text-align: center;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 0s;
+    transition: 0s;
   }
   .navbar.active {
     margin-top: 2rem;
-    padding-right: 0rem;
+    padding-left: 15rem;
+    padding-right: 2rem;
     padding-bottom: 0.5rem;
     left: 0;
-    border-bottom: #3366ff 0.6rem solid;
-    border-radius: 2rem;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    border-bottom: white 0.2rem solid;
+    border-radius: 0rem;
+  }
+  .navbar.active a {
+    color: #3366ff;
   }
   .nav-item {
     margin-top: 0.5rem;
@@ -404,13 +414,13 @@ a:active {
 
 @media screen and (max-width: 430px) {
   .illustrated-info {
-    font-size: 2rem;
-    line-height: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
     padding-left: 0rem;
     padding-right: 0rem;
   }
   .illustrated-title {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -577,8 +587,10 @@ a {
     padding-top: 2rem;
   }
   .case-study-title {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
   .case-study-description {
     font-size: 2.5rem;
@@ -593,7 +605,7 @@ a {
     font-size: 2.75rem;
   }
   .case-study-paragraphs p {
-    line-height: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
@@ -651,7 +663,7 @@ a {
 
 @media screen and (max-width: 430px) {
   .facts-header {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
     -webkit-transform: translate(0rem, -6rem);
@@ -686,12 +698,12 @@ a {
 
 @media screen and (max-width: 430px) {
   .thankyou {
-    font-size: 2.2rem;
-    padding-top: 3rem;
-    padding-bottom: 0rem;
+    font-size: 2.15rem;
+    padding-top: 0rem;
+    padding-bottom: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    line-height: 2.5rem;
+    line-height: 2.9rem;
   }
 }
 
@@ -1323,19 +1335,19 @@ h7 {
     padding-top: 12rem;
   }
   .feat-intro-title {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
     text-align: center;
   }
   .feat-intro p {
-    font-size: 2.25rem;
+    font-size: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
   .feat-intro-end {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     text-align: center;
   }
 }
@@ -1357,7 +1369,7 @@ h7 {
 
 @media screen and (max-width: 430px) {
   .feat-enter {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
   }
 }
@@ -1439,6 +1451,10 @@ h7 {
   line-height: 3.7rem;
 }
 
+.feat-highlights-1-left h {
+  font-size: 4rem;
+}
+
 @media screen and (max-width: 430px) {
   .feat-highlights {
     width: 90%;
@@ -1449,11 +1465,12 @@ h7 {
     padding-right: 0rem;
   }
   .feat-highlights p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
   }
   .feat-highlights h3 {
-    font-size: 2.35rem;
+    font-size: 2rem;
     color: #3366ff;
     padding-top: 0.75rem;
   }
@@ -1517,6 +1534,8 @@ h7 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     padding-top: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   .feat-highlights-2-right {
     display: none;
@@ -1525,9 +1544,14 @@ h7 {
     text-align: center;
     padding-right: 0rem;
   }
+  .feat-highlights-2-left h {
+    font-size: 4rem;
+  }
   .feat-highlights-2-left li {
     list-style: none;
     color: #3366ff;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -1569,20 +1593,24 @@ h7 {
   .feat-what,
   .feat-competition {
     width: 90%;
-    padding-top: 6rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   .feat-competition {
     padding-top: 3rem;
   }
   .feat-what h1,
   .feat-competition h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    text-align: left;
+    padding-bottom: 1.5rem;
   }
   .feat-what h2,
   .feat-competition h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
   }
   .feat-what img,
   .feat-competition img {
@@ -1618,7 +1646,7 @@ h7 {
     text-align: center;
   }
   .feat-features h {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 

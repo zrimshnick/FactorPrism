@@ -35,7 +35,7 @@
     padding-top: 12rem;
   }
   .feat-intro-title {
-    font-size: 5rem;
+    font-size: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
@@ -43,12 +43,12 @@
     //width: 80%;
   }
   .feat-intro p {
-    font-size: 2.25rem;
+    font-size: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
   .feat-intro-end {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     text-align: center;
   }
 }
@@ -70,7 +70,7 @@
 
 @media screen and (max-width: $phone-min) {
   .feat-enter {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: center;
   }
 }
@@ -126,6 +126,9 @@
     line-height: 3.7rem;
     //padding-bottom: 2rem;
   }
+  h {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: $phone-min) {
@@ -138,11 +141,12 @@
     padding-right: 0rem;
   }
   .feat-highlights p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding-bottom: 1rem;
   }
   .feat-highlights h3 {
-    font-size: 2.35rem;
+    font-size: 2rem;
     color: $mainblue;
     padding-top: 0.75rem;
   }
@@ -191,6 +195,8 @@
   .feat-highlights-2 {
     flex-direction: column-reverse;
     padding-top: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   .feat-highlights-2-right {
     display: none;
@@ -199,9 +205,14 @@
     text-align: center;
     padding-right: 0rem;
   }
+  .feat-highlights-2-left h {
+    font-size: 4rem;
+  }
   .feat-highlights-2-left li {
     list-style: none;
     color: $mainblue;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -231,20 +242,24 @@
   .feat-what,
   .feat-competition {
     width: 90%;
-    padding-top: 6rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 4rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   .feat-competition {
     padding-top: 3rem;
   }
   .feat-what h1,
   .feat-competition h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    text-align: left;
+    padding-bottom: 1.5rem;
   }
   .feat-what h2,
   .feat-competition h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
   }
   .feat-what img,
   .feat-competition img {
@@ -270,7 +285,7 @@
     padding: 2rem;
     text-align: center;
     h {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 }
