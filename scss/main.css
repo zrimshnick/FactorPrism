@@ -80,7 +80,7 @@ header {
 }
 
 a {
-  font-family: "Barlow", sans-serif;
+  font-family: "Questrial", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   padding: 0.5rem;
@@ -219,7 +219,7 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font: "Barlow", sans-serif;
+  font: "Questrial", sans-serif;
   -webkit-animation: fadeInAnimation ease 3s;
           animation: fadeInAnimation ease 3s;
   -webkit-animation-iteration-count: 1;
@@ -1984,7 +1984,7 @@ body,
 }
 
 html {
-  font-family: "Barlow", sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 body {
