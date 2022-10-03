@@ -1,3 +1,3 @@
 # Website for FactorPrism® data analytics
-# visit at: https://factorprism.netlify.app/
+visit at: https://factorprism.netlify.app/
 
